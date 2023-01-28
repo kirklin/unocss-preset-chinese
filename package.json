@@ -53,9 +53,6 @@
     "typecheck": "tsc --noEmit",
     "up": "taze major -r -w -I"
   },
-  "dependencies": {
-    "@kirklin/reset-css": "^0.0.3"
-  },
   "devDependencies": {
     "@antfu/ni": "^0.19.0",
     "@kirklin/eslint-config": "^0.2.5",

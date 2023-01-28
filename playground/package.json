@@ -1,0 +1,18 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@kirklin/reset-css": "^0.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "unocss-preset-chinese": "workspace:*",
+    "vite": "^4.0.4"
+  }
+}
