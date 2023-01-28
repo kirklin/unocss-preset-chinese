@@ -7,6 +7,8 @@ importers:
       '@antfu/ni': ^0.19.0
       '@kirklin/eslint-config': ^0.2.5
       '@types/node': ^18.11.18
+      '@unocss/autocomplete': ^0.49.1
+      '@unocss/core': ^0.49.1
       bumpp: ^8.2.1
       eslint: ^8.32.0
       esno: ^0.16.3
@@ -18,10 +20,13 @@ importers:
       unocss: ^0.31.13
       vite: ^4.0.4
       vitest: ^0.28.3
+    dependencies:
+      '@unocss/core': 0.49.1
     devDependencies:
       '@antfu/ni': 0.19.0
       '@kirklin/eslint-config': 0.2.5_7uibuqfxkfaozanbtbziikiqje
       '@types/node': 18.11.18
+      '@unocss/autocomplete': 0.49.1
       bumpp: 8.2.1
       eslint: 8.32.0
       esno: 0.16.3
@@ -1327,6 +1332,12 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
+  /@unocss/autocomplete/0.49.1:
+    resolution: {integrity: sha512-QiWz5VXhxENQmN3HivxPxCxJkc4t7BHk6lpCK0//vZDQLvN0wN8eq6INuyT4+HH649feQdjLKPcZzx774EqHRg==}
+    dependencies:
+      lru-cache: 7.14.1
+    dev: true
+
   /@unocss/cli/0.31.17:
     resolution: {integrity: sha512-at/gAnZBrutoTuee7dujhN/TRSCWAq+1QYm2ekfNktt4dgA5xVzvFQo63GEUvnM4tE51SQkIbznf44BxNbuEUQ==}
     engines: {node: '>=14'}
@@ -1355,6 +1366,10 @@ packages:
   /@unocss/core/0.31.17:
     resolution: {integrity: sha512-DJ3Uk2ePVXvV1qQmgoLK44aqB6f0s+naOEvouI97nzVXDZgxDQPBxIPB/L4vvE4U+gQxEiHwwE3gJ75iPqVzXw==}
     dev: true
+
+  /@unocss/core/0.49.1:
+    resolution: {integrity: sha512-l+L1c8eCwfaQA1sAYDE+xJ+r9ocfyTo9KzRUOIy5eV/wxC82HoLtJN8wIGuWaY8fGQh/gT74Czfq7g7BFNKhaw==}
+    dev: false
 
   /@unocss/inspector/0.31.17:
     resolution: {integrity: sha512-eBRSBtiSvIk5mVJnNyN6Ag9ykBmQi2xROvcNS5sa11SHMkwWEaj1/8kBxyYFuOvl6ysEtdC7eSzv0tMRjXuuTw==}

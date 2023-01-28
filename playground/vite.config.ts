@@ -1,8 +1,22 @@
+import { presetAttributify, presetUno, transformerDirectives } from "unocss";
+import UnoCSS from "unocss/vite";
 import { defineConfig } from "vite";
-import unocss from "unocss/vite";
+
+import presetChinese from "../src/index";
 
 export default defineConfig({
   plugins: [
-    unocss(),
+    UnoCSS({
+      presets: [
+        presetUno(),
+        presetAttributify(),
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
+        presetChinese(),
+      ],
+      transformers: [
+        transformerDirectives(),
+      ],
+    }),
   ],
 });
