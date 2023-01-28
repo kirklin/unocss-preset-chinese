@@ -1,0 +1,75 @@
+{
+  "name": "unocss-preset-chinese",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.12.2",
+  "description": "",
+  "author": "Kirk Lin <https://github.com/kirklin>",
+  "license": "MIT",
+  "funding": "https://www.buymeacoffee.com/linkirk",
+  "homepage": "https://github.com/kirklin/unocss-preset-chinese#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirklin/unocss-preset-chinese.git"
+  },
+  "bugs": "https://github.com/kirklin/unocss-preset-chinese/issues",
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "chinese",
+    "unocss-preset-chinese"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "up": "taze major -r -w -I"
+  },
+  "dependencies": {
+    "@kirklin/reset-css": "^0.0.3"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^0.19.0",
+    "@kirklin/eslint-config": "^0.2.5",
+    "@types/node": "^18.11.18",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.32.0",
+    "esno": "^0.16.3",
+    "pnpm": "^7.26.1",
+    "rimraf": "^4.1.2",
+    "taze": "^0.8.5",
+    "typescript": "^4.9.4",
+    "unbuild": "^1.1.1",
+    "unocss": "^0.31.13",
+    "vite": "^4.0.4",
+    "vitest": "^0.28.3"
+  }
+}
