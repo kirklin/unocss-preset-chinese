@@ -2,7 +2,7 @@ import { toArray } from "@unocss/core";
 import type { Preset } from "@unocss/core";
 import { defaultChineseFonts } from "./defaultChineseFonts";
 import type { ChineseFontsOptions } from "./types";
-const presetChinese = (options: ChineseFontsOptions = {}): Preset<any> => {
+const presetChinese = (options: ChineseFontsOptions = {}): Preset<{}> => {
   const {
     extendTheme = true,
     themeKey = "fontFamily",
@@ -12,7 +12,7 @@ const presetChinese = (options: ChineseFontsOptions = {}): Preset<any> => {
     Object.entries(options.fonts || {})
       .map(([name, meta]) => [name, toArray(meta).map(m => m)]),
   );
-  const preset: Preset<any> = {
+  const preset: Preset<{} | any> = {
     name: "unocss-preset-chinese",
   };
   if (extendTheme) {
