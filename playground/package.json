@@ -8,11 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@kirklin/reset-css": "^0.0.3"
+    "@kirklin/reset-css": "^0.0.3",
+    "unocss-preset-chinese": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^4.9.5",
-    "unocss-preset-chinese": "workspace:*",
     "vite": "^4.1.4"
   }
 }

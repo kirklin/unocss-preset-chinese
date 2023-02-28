@@ -1,6 +1,5 @@
 {
   "name": "unocss-preset-chinese",
-  "type": "module",
   "version": "0.0.4",
   "packageManager": "pnpm@7.12.2",
   "description": "",
@@ -52,6 +51,14 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "up": "taze major -r -w -I"
+  },
+  "peerDependenciesMeta": {
+    "unocss": {
+      "optional": true
+    },
+    "@unocss/nuxt": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@unocss/core": "^0.50.1"
