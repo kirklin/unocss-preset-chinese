@@ -3,6 +3,8 @@ import type { Preset } from "@unocss/core";
 import { defaultChineseFonts } from "./defaultChineseFonts";
 import type { ChineseFontsOptions } from "./types";
 
+export * from "./types";
+
 const presetChinese = (options: ChineseFontsOptions = {}): Preset => {
   // 解构参数并提供默认值
   const { extendTheme = true, themeKey = "fontFamily" } = options;

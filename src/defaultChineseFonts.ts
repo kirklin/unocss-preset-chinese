@@ -83,4 +83,21 @@ export const defaultChineseFonts = {
     "CWTEX-F",
     "serif",
   ],
+  // 新宋体
+  "new-song": [
+    "SimSun-ExtB",
+    "NSimSun",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei UI Light",
+    "Microsoft YaHei UI Bold",
+    "serif",
+  ],
+  // 隶书
+  "li": [
+    "LiSu",
+    "YouYuan",
+    "STXingkai",
+    "Xingkai SC",
+    "PMingLiU-ExtB",
+  ],
 };
