@@ -2,7 +2,8 @@ import { toArray } from "@unocss/core";
 import type { Preset } from "@unocss/core";
 import { defaultChineseFonts } from "./defaultChineseFonts";
 import type { ChineseFontsOptions } from "./types";
-const presetChinese = (options: ChineseFontsOptions = {}): Preset<{}> => {
+
+const presetChinese = (options: ChineseFontsOptions = {}): Preset => {
   const {
     extendTheme = true,
     themeKey = "fontFamily",
