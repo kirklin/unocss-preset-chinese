@@ -2,7 +2,7 @@ import { presetAttributify, presetUno, transformerDirectives } from "unocss";
 import UnoCSS from "unocss/vite";
 import { defineConfig } from "vite";
 
-import presetChinese from "unocss-preset-chinese";
+import presetChinese from "../src/index";
 
 export default defineConfig({
   plugins: [
