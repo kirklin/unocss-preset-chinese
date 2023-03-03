@@ -99,5 +99,6 @@ export const defaultChineseFonts = {
     "STXingkai",
     "Xingkai SC",
     "PMingLiU-ExtB",
+    "serif",
   ],
 };
