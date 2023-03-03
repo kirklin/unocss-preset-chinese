@@ -19,34 +19,7 @@ import presetUno from "@unocss/preset-uno";
 UnoCSS({
   presets: [
     presetUno(),
-    presetChinese({
-      fonts: {
-        // these will extend the default theme
-        // 宋体
-        song: [
-          "Georgia",
-          "Nimbus Roman No9 L",
-          "Songti SC",
-          "Noto Serif CJK SC",
-          "Source Han Serif SC",
-          "Source Han Serif CN",
-          "STSong",
-          "AR PL New Sung",
-          "AR PL SungtiL GB",
-          "NSimSun",
-          "SimSun",
-          "TW-Sung",
-          "WenQuanYi Bitmap Song",
-          "AR PL UMing CN",
-          "AR PL UMing HK",
-          "AR PL UMing TW",
-          "AR PL UMing TW MBE",
-          "PMingLiU",
-          "MingLiU",
-          "serif",
-        ],
-      },
-    }),
+    presetChinese(),
   ],
 });
 ```
@@ -72,6 +45,14 @@ The following CSS will be generated
 
 .font-song {
     font-family: Georgia, Nimbus Roman No9 L, Songti SC, Noto Serif CJK SC, Source Han Serif SC, Source Han Serif CN, STSong, AR PL New Sung, AR PL SungtiL GB, NSimSun, SimSun, TW-Sung, WenQuanYi Bitmap Song, AR PL UMing CN, AR PL UMing HK, AR PL UMing TW, AR PL UMing TW MBE, PMingLiU, MingLiU, serif;
+}
+
+.font-new-song {
+    font-family: SimSun-ExtB,NSimSun,Microsoft YaHei UI,Microsoft YaHei UI Light,Microsoft YaHei UI Bold,serif;
+}
+
+.font-li {
+    font-family: LiSu,YouYuan,STXingkai,Xingkai SC,PMingLiU-ExtB,serif;
 }
 ```
 
