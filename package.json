@@ -1,6 +1,6 @@
 {
   "name": "unocss-preset-chinese",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "packageManager": "pnpm@7.12.2",
   "description": "",
   "author": "Kirk Lin <https://github.com/kirklin>",
