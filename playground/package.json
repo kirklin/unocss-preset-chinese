@@ -12,7 +12,7 @@
     "unocss-preset-chinese": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "^4.9.5",
-    "vite": "^4.1.4"
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
   }
 }
