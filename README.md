@@ -13,13 +13,15 @@ npm i -D unocss-preset-chinese
 ```
 
 ```ts
+// uno.config.ts
 import presetChinese from "unocss-preset-chinese";
-import presetUno from "@unocss/preset-uno";
+import { defineConfig, presetUno } from "unocss";
 
-UnoCSS({
+export default defineConfig({
   presets: [
     presetUno(),
     presetChinese(),
+    // ...custom presets
   ],
 });
 ```
