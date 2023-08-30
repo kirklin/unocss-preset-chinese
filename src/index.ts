@@ -1,17 +1,29 @@
 import { toArray } from "@unocss/core";
 import type { Preset } from "unocss";
-import type { FontType } from "./defaultChineseFonts";
-import { defaultChineseFonts, generateFontFaceRule } from "./defaultChineseFonts";
-import type { ChineseFontsOptions } from "./types";
+import { fontType } from "./constants";
+import type { ChineseFontsOptions, FontType } from "./types";
+import { defaultChineseFonts, generateFontFaceRule, generateFontList } from "./core";
 
 export * from "./types";
 
 const presetChinese = (options: ChineseFontsOptions = {}): Preset => {
   // 解构参数并提供默认值
-  const { extendTheme = true, themeKey = "fontFamily" } = options;
+  const {
+    extendTheme = true,
+    themeKey = "fontFamily",
+    chineseType = "simplified",
+    fallbackFont = ["sans-serif"],
+    declareEnglishFont = ["Arial"],
+  } = options;
 
   // 合并字体选项
-  const fonts = { ...defaultChineseFonts, ...options?.fonts };
+  const fonts = {
+    ...fontType.reduce((fonts, type) => {
+      fonts[type] = generateFontList(chineseType, type, fallbackFont, declareEnglishFont);
+      return fonts;
+    }, {} as Record<FontType, string[]>),
+    ...options?.fonts,
+  };
 
   // 转换字体选项为字体对象
   const fontObject = Object.fromEntries(
@@ -46,7 +58,7 @@ const presetChinese = (options: ChineseFontsOptions = {}): Preset => {
   }
 
   const fontFacePreflights = Object.keys(defaultChineseFonts).map(fontType => ({
-    getCSS: () => generateFontFaceRule(<FontType>fontType),
+    getCSS: () => generateFontFaceRule(<FontType>fontType, declareEnglishFont),
   }));
 
   preset.preflights = fontFacePreflights;
