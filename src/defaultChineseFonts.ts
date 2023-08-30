@@ -1,5 +1,6 @@
 export const defaultChineseFonts = {
   "chinese": [
+    "Punctuation SC",
     "Helvetica Neue",
     "Helvetica",
     "Arial",
@@ -11,6 +12,7 @@ export const defaultChineseFonts = {
   ],
   // 黑体
   "helvetica": [
+    "Punctuation SC",
     "-apple-system",
     "Noto Sans",
     "Helvetica Neue",
@@ -33,6 +35,7 @@ export const defaultChineseFonts = {
   ],
   // 楷体
   "italics": [
+    "Punctuation SC",
     "Baskerville",
     "Georgia",
     "Liberation Serif",
@@ -51,6 +54,7 @@ export const defaultChineseFonts = {
   ],
   // 宋体
   "song": [
+    "Punctuation SC",
     "Georgia",
     "Nimbus Roman No9 L",
     "Songti SC",
@@ -74,6 +78,7 @@ export const defaultChineseFonts = {
   ],
   // 仿宋体
   "imitation-song": [
+    "Punctuation SC",
     "Baskerville",
     "Times New Roman",
     "Liberation Serif",
@@ -85,6 +90,7 @@ export const defaultChineseFonts = {
   ],
   // 新宋体
   "new-song": [
+    "Punctuation SC",
     "SimSun-ExtB",
     "NSimSun",
     "Microsoft YaHei UI",
@@ -94,6 +100,7 @@ export const defaultChineseFonts = {
   ],
   // 隶书
   "li": [
+    "Punctuation SC",
     "LiSu",
     "YouYuan",
     "STXingkai",
