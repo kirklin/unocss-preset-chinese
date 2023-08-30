@@ -1,19 +1,26 @@
 # unocss-preset-chinese
 
-## Introduction
-这是一个用于优化中文网站或应用程序字体显示的项目。
-这个项目提供了一个默认的字体排序方案，以确保在没有指定字体的情况下，页面中选择的字体尽可能符合中文阅读的要求。
-字体排序方案基于中文阅读体验的考虑，优先选择在中文环境中广泛使用和受欢迎的字体，并根据字体支持的字形和符号以及跨平台支持来确定字体的优先级顺序。
-该项目旨在提供unocss预设，使开发人员能够更轻松地创建适合中文阅读的界面。
+## 简介
+这是一个旨在优化中文网站或应用程序字体显示的项目。
+通过使用这个项目，您可以获得一个默认的字体排列方案，以确保在没有指定字体的情况下，页面中选择的字体尽可能符合中文阅读的要求。
+这个项目的字体排列方案是基于中文阅读体验的考虑，它优先选择在中文环境中广泛使用和受欢迎的字体，并根据字体支持的字形、符号以及跨平台支持来确定字体的优先级顺序。
 
-## Install
+## 功能
+提供多种字体排列方案，以适应不同类型的中文字符（简体或繁体）。
+支持中英文混排，有效避免中文标点符号受英文字体影响。
+
+## 如何使用
+
+1. 使用 npm 或 pnpm 安装 unocss 和 unocss-preset-chinese：
 
 ```bash
-npm i -D unocss-preset-chinese
+npm install unocss unocss-preset-chinese --save-dev
 ```
 
+2. 在您的 Unocss 配置文件中引入 unocss-preset-chinese 并将其添加到 presets 部分：
+
 ```ts
-// uno.config.ts
+// unocss.config.js
 import presetChinese from "unocss-preset-chinese";
 import { defineConfig, presetUno } from "unocss";
 
@@ -26,35 +33,49 @@ export default defineConfig({
 });
 ```
 
-The following CSS will be generated
+## 配置选项
+您可以使用以下配置选项来自定义字体排列方案：
 
-```css
-.font-chinese {
-    font-family: Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
-}
+```typescript
+interface ChineseFontsOptions {
+    /**
+     * Extend the theme object
+     * 扩展主题对象
+     * @default true
+     */
+    extendTheme?: boolean;
 
-.font-helvetica {
-    font-family: -apple-system, Noto Sans, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, Microsoft YaHei, Wenquanyi Micro Hei, WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif;
-}
+    /**
+     * Key for the theme object
+     * 主题对象的键
+     *
+     * @default 'fontFamily'
+     */
+    themeKey?: string;
 
-.font-imitation-song {
-    font-family: Baskerville, Times New Roman, Liberation Serif, STFangsong, FangSong, FangSong_GB2312, CWTEX-F, serif;
-}
+    /**
+     * Extend fonts
+     * 扩展字体
+     */
+    fonts?: Record<string, string | string[]>;
 
-.font-italics {
-    font-family: Baskerville, Georgia, Liberation Serif, Kaiti SC, STKaiti, AR PL UKai CN, AR PL UKai HK, AR PL UKai TW, AR PL UKai TW MBE, AR PL KaitiM GB, KaiTi, KaiTi_GB2312, DFKai-SB, TW-Kai, serif;
-}
+    /**
+     * The type of Chinese: "simplified" or "traditional".
+     * 中文的类型: "simplified"（简体）或 "traditional"（繁体）。
+     */
+    chineseType?: ChineseType;
 
-.font-song {
-    font-family: Georgia, Nimbus Roman No9 L, Songti SC, Noto Serif CJK SC, Source Han Serif SC, Source Han Serif CN, STSong, AR PL New Sung, AR PL SungtiL GB, NSimSun, SimSun, TW-Sung, WenQuanYi Bitmap Song, AR PL UMing CN, AR PL UMing HK, AR PL UMing TW, AR PL UMing TW MBE, PMingLiU, MingLiU, serif;
-}
+    /**
+     * Fallback font for Chinese characters.
+     * 备选字体。
+     */
+    fallbackFont?: string[] | null;
 
-.font-new-song {
-    font-family: SimSun-ExtB,NSimSun,Microsoft YaHei UI,Microsoft YaHei UI Light,Microsoft YaHei UI Bold,serif;
-}
-
-.font-li {
-    font-family: LiSu,YouYuan,STXingkai,Xingkai SC,PMingLiU-ExtB,serif;
+    /**
+     * Declare fonts for English text.
+     * 声明英文文本的字体。
+     */
+    declareEnglishFont?: string[];
 }
 ```
 
