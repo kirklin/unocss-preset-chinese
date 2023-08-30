@@ -82,7 +82,18 @@ export function generateFontList(
         break;
         // 新宋体
       case "new-song":
-        fontList.push("SimSun-ExtB", "NSimSun");
+        fontList.push("SimSun-ExtB", "NSimSun", "Songti SC", "Noto Serif CJK SC",
+          "Source Han Serif SC",
+          "Source Han Serif CN",
+          "STSong",
+          "AR PL New Sung",
+          "AR PL SungtiL GB",
+          "NSimSun",
+          "SimSun",
+          "WenQuanYi Bitmap Song",
+          "AR PL UMing CN",
+          "PMingLiU",
+          "MingLiU");
         fontList.push(...chineseFonts);
         break;
         // 隶书
