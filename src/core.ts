@@ -87,7 +87,7 @@ export function generateFontList(
         break;
         // 隶书
       case "li":
-        fontList.push("LiSu", "STLiti");
+        fontList.push("STLiti", "LiSu", "Hiragino Mincho ProN W6", "Hiragino Mincho ProN W3");
         fontList.push(...chineseFonts);
         break;
       default:
