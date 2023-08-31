@@ -47,7 +47,7 @@ export interface ChineseFontsOptions {
  * Represents different font types that can be used, including various Chinese fonts and styles.
  * 表示可用的不同字体类型，包括各种中文字体和样式。
  */
-export type FontType = "chinese" | "helvetica" | "italics" | "song" | "imitation-song" | "new-song" | "li";
+export type FontType = "chinese" | "hei" | "kai" | "song" | "imitation-song" | "new-song" | "li";
 
 /**
  * Represents different types of Chinese characters, such as simplified or traditional.

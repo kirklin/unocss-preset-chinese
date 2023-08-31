@@ -14,8 +14,8 @@ export const linuxTraditionalChinese = ["system-ui", "Ubuntu", "Droid Sans", "So
  *
  * @param chineseType - The type of chinese: "simplified" or "traditional".
  *                       要考虑的汉字类型："simplified"（简体）或 "traditional"（繁体）。
- * @param fontType - The type of font to generate the list for: "chinese", "helvetica", "italics", "song", "imitation-song", "new-song", or "li".
- *                  要生成列表的字体类型："chinese"、"helvetica"、"italics"、"song"、"imitation-song"、"new-song" 或 "li"。
+ * @param fontType - The type of font to generate the list for: "chinese", "hei", "kai", "song", "imitation-song", "new-song", or "li".
+ *                  要生成列表的字体类型："chinese"、"hei"、"kai"、"song"、"imitation-song"、"new-song" 或 "li"。
  * @param fallbackFont - The fallback font to use if the desired font type is not available. Pass `null` for no fallback.
  *                      如果所需字体类型不可用，则使用的回退字体。传递 `null` 表示没有回退字体。
  * @param declareEnglishFont - Whether to declare an English font.
@@ -47,12 +47,12 @@ export function generateFontList(
         fontList.push(...chineseFonts);
         break;
         // 黑体
-      case "helvetica":
+      case "hei":
         fontList.push("PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC",
           "WenQuanYi Micro Hei", "WenQuanYi Zen Hei", "SimHei", "WenQuanYi Zen Hei Sharp");
         break;
         // 楷体
-      case "italics":
+      case "kai":
         fontList.push("Kaiti SC", "STKaiti",
           "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB",
           "KaiTi", "KaiTi_GB2312", "DFKai-SB");
@@ -112,12 +112,12 @@ export function generateFontList(
         fontList.push(...chineseFonts);
         break;
         // 黑体
-      case "helvetica":
+      case "hei":
         fontList.push("PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC",
           "WenQuanYi Micro Hei", "WenQuanYi Zen Hei", "SimHei", "WenQuanYi Zen Hei Sharp");
         break;
         // 楷体
-      case "italics":
+      case "kai":
         fontList.push("Kaiti SC", "STKaiti",
           "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB",
           "KaiTi", "KaiTi_GB2312", "DFKai-SB", "TW-Kai");
