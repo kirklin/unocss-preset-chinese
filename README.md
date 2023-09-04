@@ -40,7 +40,7 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetChinese({
-        chineseType: "traditional", // 指定文本为繁体中文
+      chineseType: "simplified", // 指定文本为简体中文
     }),
     // ...custom presets
   ],
@@ -48,49 +48,40 @@ export default defineConfig({
 ```
 
 ## 配置选项
+
 您可以使用以下配置选项来自定义字体排列方案：
 
+- **extendTheme** (boolean, 默认值: true): 是否扩展主题对象。
+
+- **themeKey** (string, 默认值: "fontFamily"): 主题对象的键。
+
+- **fonts** (Record<string, string | string[]>): 扩展字体，您可以指定不同的字体和字体权重。
+
+- **chineseType** (ChineseType, 默认值: "simplified"): 中文的类型，可选值为 "simplified"（简体）或 "traditional"（繁体）。
+
+- **fallbackFont** (string[] | null): 用于中文字符的备选字体。
+
+- **declareEnglishFont** (string[]): 声明英文文本的字体。
+
+### 示例
+
+以下是一个示例配置，演示如何使用这些选项来自定义字体排列方案：
+
 ```typescript
-interface ChineseFontsOptions {
-    /**
-     * Extend the theme object
-     * 扩展主题对象
-     * @default true
-     */
-    extendTheme?: boolean;
+import presetChinese from "unocss-preset-chinese";
+import { defineConfig, presetUno } from "unocss";
 
-    /**
-     * Key for the theme object
-     * 主题对象的键
-     *
-     * @default 'fontFamily'
-     */
-    themeKey?: string;
-
-    /**
-     * Extend fonts
-     * 扩展字体
-     */
-    fonts?: Record<string, string | string[]>;
-
-    /**
-     * The type of Chinese: "simplified" or "traditional".
-     * 中文的类型: "simplified"（简体）或 "traditional"（繁体）。
-     */
-    chineseType?: ChineseType;
-
-    /**
-     * Fallback font for Chinese characters.
-     * 备选字体。
-     */
-    fallbackFont?: string[] | null;
-
-    /**
-     * Declare fonts for English text.
-     * 声明英文文本的字体。
-     */
-    declareEnglishFont?: string[];
-}
+export default defineConfig({
+  presets: [
+    presetUno(),
+    presetChinese({
+      extendTheme: false, // 不扩展主题对象
+      themeKey: 'customFontFamily', // 使用自定义的主题键
+      chineseType: "traditional", // 指定文本为繁体中文
+    }),
+    // ...custom presets
+  ],
+});
 ```
 
 
