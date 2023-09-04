@@ -7,7 +7,9 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetChinese(),
+    presetChinese({
+      chineseType: "simplified",
+    }),
     presetEase(),
     presetIcons({
       scale: 1.5,

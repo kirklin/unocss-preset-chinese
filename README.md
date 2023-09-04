@@ -39,7 +39,9 @@ import { defineConfig, presetUno } from "unocss";
 export default defineConfig({
   presets: [
     presetUno(),
-    presetChinese(),
+    presetChinese({
+        chineseType: "traditional", // 指定文本为繁体中文
+    }),
     // ...custom presets
   ],
 });
