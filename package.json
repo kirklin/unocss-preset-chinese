@@ -1,7 +1,7 @@
 {
   "name": "unocss-preset-chinese",
   "version": "0.2.0",
-  "packageManager": "pnpm@8.6.12",
+  "packageManager": "pnpm@8.7.1",
   "description": "",
   "author": "Kirk Lin <https://github.com/kirklin>",
   "license": "MIT",
@@ -62,23 +62,23 @@
     }
   },
   "dependencies": {
-    "@unocss/core": "^0.55.0"
+    "@unocss/core": "^0.55.7"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.21.5",
-    "@kirklin/eslint-config": "^0.5.2",
-    "@types/node": "^20.5.0",
-    "@unocss/autocomplete": "^0.55.0",
-    "bumpp": "^9.1.1",
-    "eslint": "^8.47.0",
+    "@antfu/ni": "^0.21.8",
+    "@kirklin/eslint-config": "^0.5.3",
+    "@types/node": "^20.5.9",
+    "@unocss/autocomplete": "^0.55.7",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.48.0",
     "esno": "^0.17.0",
-    "pnpm": "^8.6.12",
+    "pnpm": "^8.7.1",
     "rimraf": "^5.0.1",
     "taze": "^0.11.2",
-    "typescript": "^5.1.6",
-    "unbuild": "^1.2.1",
-    "unocss": "^0.55.0",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "unocss": "^0.55.7",
     "vite": "^4.4.9",
-    "vitest": "^0.34.1"
+    "vitest": "^0.34.3"
   }
 }
