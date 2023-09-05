@@ -11,6 +11,9 @@
 [code-style-image]: https://img.shields.io/badge/code__style-%40kirklin%2Feslint--config-brightgreen
 [code-style-url]: https://github.com/kirklin/eslint-config/
 
+<div align='center'>
+<a href="README.en.md">English</a> | <b>简体中文</b>
+</div>
 
 ## 简介
 这是一个旨在优化中文网站或应用程序字体显示的项目。
