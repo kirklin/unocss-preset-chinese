@@ -48,7 +48,7 @@ export function generateFontList(
         break;
         // 黑体
       case "hei":
-        fontList.push("PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC",
+        fontList.push("PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "Noto Sans CJK SC",
           "WenQuanYi Micro Hei", "WenQuanYi Zen Hei", "SimHei", "WenQuanYi Zen Hei Sharp");
         break;
         // 楷体
@@ -60,7 +60,7 @@ export function generateFontList(
         break;
         // 宋体
       case "song":
-        fontList.push("Songti SC", "Noto Serif CJK SC",
+        fontList.push("Songti SC", "Noto Serif SC", "Noto Serif CJK SC",
           "Source Han Serif SC",
           "Source Han Serif CN",
           "STSong",
@@ -82,7 +82,7 @@ export function generateFontList(
         break;
         // 新宋体
       case "new-song":
-        fontList.push("SimSun-ExtB", "NSimSun", "Songti SC", "Noto Serif CJK SC",
+        fontList.push("SimSun-ExtB", "NSimSun", "Songti SC", "Noto Serif SC", "Noto Serif CJK SC",
           "Source Han Serif SC",
           "Source Han Serif CN",
           "STSong",
@@ -113,7 +113,7 @@ export function generateFontList(
         break;
         // 黑体
       case "hei":
-        fontList.push("PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC",
+        fontList.push("PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "Noto Sans CJK SC",
           "WenQuanYi Micro Hei", "WenQuanYi Zen Hei", "SimHei", "WenQuanYi Zen Hei Sharp");
         break;
         // 楷体
@@ -125,9 +125,8 @@ export function generateFontList(
         break;
         // 宋体
       case "song":
-        fontList.push("Songti SC", "Noto Serif CJK SC",
-          "Source Han Serif SC",
-          "Source Han Serif CN",
+        fontList.push("Songti SC", "Noto Serif SC", "Noto Serif CJK SC",
+          "Source Han Serif SC", "Source Han Serif CN",
           "STSong",
           "AR PL New Sung",
           "AR PL SungtiL GB",
@@ -151,7 +150,18 @@ export function generateFontList(
         break;
         // 新宋体
       case "new-song":
-        fontList.push("SimSun-ExtB", "NSimSun");
+        fontList.push("SimSun-ExtB", "NSimSun", "Songti SC", "Noto Serif SC", "Noto Serif CJK SC",
+          "Source Han Serif SC",
+          "Source Han Serif CN",
+          "STSong",
+          "AR PL New Sung",
+          "AR PL SungtiL GB",
+          "NSimSun",
+          "SimSun",
+          "WenQuanYi Bitmap Song",
+          "AR PL UMing CN",
+          "PMingLiU",
+          "MingLiU");
         fontList.push(...chineseFonts);
         break;
         // 隶书
