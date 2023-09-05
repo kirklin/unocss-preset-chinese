@@ -62,7 +62,6 @@
     }
   },
   "dependencies": {
-    "@unocss/core": "^0.55.7"
   },
   "devDependencies": {
     "@antfu/ni": "^0.21.8",

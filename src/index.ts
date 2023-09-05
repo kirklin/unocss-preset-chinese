@@ -1,5 +1,5 @@
-import { toArray } from "@unocss/core";
 import type { Preset } from "unocss";
+import { toArray } from "./utils";
 import { fontType } from "./constants";
 import type { ChineseFontsOptions, FontType } from "./types";
 import { defaultChineseFonts, generateFontFaceRule, generateFontList } from "./core";
