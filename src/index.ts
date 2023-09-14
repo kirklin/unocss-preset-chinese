@@ -6,6 +6,8 @@ import { defaultChineseFonts, generateFontFaceRule, generateFontList } from "./c
 
 export * from "./types";
 
+export * from "./typography/index";
+
 const presetChinese = (options: ChineseFontsOptions = {}): Preset => {
   // 解构参数并提供默认值
   const {
