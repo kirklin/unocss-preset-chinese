@@ -54,3 +54,5 @@ export type FontType = "chinese" | "hei" | "kai" | "song" | "imitation-song" | "
  * 表示不同类型的中文字符，例如简体或繁体。
  */
 export type ChineseType = "simplified" | "traditional";
+
+export type DeepPartial<T> = { [P in keyof T]?: DeepPartial<T[P]> };

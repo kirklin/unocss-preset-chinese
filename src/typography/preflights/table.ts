@@ -1,0 +1,31 @@
+export const ChineseTable = {
+  "table": {
+    "box-sizing": "border-box",
+    "table-layout": "fixed",
+    "margin-block-start": "calc(var(--un-chinese-typography-std-block-unit) * 0.5)",
+    "margin-block-end": "var(--un-chinese-typography-std-block-unit)",
+    "margin-inline-start": "auto",
+    "margin-inline-end": "auto",
+    "border-collapse": "collapse",
+    "border-width": "1px",
+    "border-style": "solid",
+    "border-color": "hsl(0, 0%, 80%)",
+    "word-break": "break-word",
+  },
+  "th, td": {
+    "padding-block-start": "calc(var(--un-chinese-typography-std-block-unit) * 0.25)",
+    "padding-block-end": "calc(var(--un-chinese-typography-std-block-unit) * 0.25)",
+    "padding-inline-start": "calc(var(--un-chinese-typography-std-inline-unit) * 0.5)",
+    "padding-inline-end": "calc(var(--un-chinese-typography-std-inline-unit) * 0.5)",
+    "border-width": "1px",
+    "border-style": "solid",
+    "border-color": "hsl(0, 0%, 80%)",
+  },
+  "caption": {
+    "caption-side": "bottom",
+    "margin-block-start": "2px",
+    "margin-block-end": "-4px",
+    "font-size": "var(--un-chinese-typography-font-size-small)",
+    "line-height": "var(--un-chinese-typography-line-height-size-small)",
+  },
+};
