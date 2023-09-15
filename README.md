@@ -32,7 +32,7 @@
 npm install unocss unocss-preset-chinese --save-dev
 ```
 
-2. 在您的 Unocss 配置文件中引入 unocss-preset-chinese 并将其添加到 presets 部分：
+2. 在您的 UnoCss 配置文件中引入 unocss-preset-chinese 并将其添加到 presets 部分：
 
 ```ts
 // unocss.config.js

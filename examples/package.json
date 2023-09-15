@@ -49,6 +49,7 @@
     "jsdom": "^22.1.0",
     "lint-staged": "^14.0.1",
     "pnpm": "^8.7.1",
+    "sass": "^1.66.1",
     "typescript": "^5.2.2",
     "unocss": "^0.55.7",
     "unocss-preset-chinese": "workspace:*",

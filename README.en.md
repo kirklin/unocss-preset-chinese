@@ -30,7 +30,7 @@ This is a project aimed at optimizing the display of fonts on Chinese websites o
 npm install unocss unocss-preset-chinese --save-dev
 ```
 
-2. In your Unocss configuration file, import unocss-preset-chinese and add it to the presets section:
+2. In your UnoCss configuration file, import unocss-preset-chinese and add it to the presets section:
 
 ```ts
 // unocss.config.js

@@ -9,11 +9,12 @@ import messages from "@intlify/unplugin-vue-i18n/messages";
 import { router } from "./router";
 
 import { registerStore } from "./store";
+import { setupDirectives } from "~/directive";
 import App from "~/App.vue";
 
 // reset css
 import "@kirklin/reset-css/kirklin.css";
-import "~/styles/main.css";
+import "~/styles/main.scss";
 import "uno.css";
 
 const app = createApp(App);
@@ -22,6 +23,7 @@ app.use(createI18n({
   locale: unref(useLocalStorage("locale", "zh")),
   messages,
 }));
+setupDirectives(app);
 app.use(createPinia());
 registerStore();
 app.use(router);

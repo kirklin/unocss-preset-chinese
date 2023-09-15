@@ -91,16 +91,6 @@ export default defineConfig({
       "~/": `${resolve(__dirname, "src")}/`,
     },
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-      @import "~/styles/variables.scss";
-    `,
-        javascriptEnabled: true,
-      },
-    },
-  },
   // https://github.com/vitest-dev/vitest
   test: {
     environment: "jsdom",

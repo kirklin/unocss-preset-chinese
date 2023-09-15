@@ -5,7 +5,7 @@ defineOptions({
 </script>
 
 <template>
-  <div class="antialiased">
+  <div class="">
     <div class="min-h-screen">
       <RouterView />
     </div>
