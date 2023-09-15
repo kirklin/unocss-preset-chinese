@@ -1,8 +1,5 @@
 export const getVariables = {
   rootSelector: "var(--un-chinese-typography-root-selector)",
-  darkmode: "var(--un-chinese-typography-darkmode)",
-  manualmodeAutoSelector: "var(--un-chinese-typography-manualmode-auto-selector)",
-  manualmodeDarkSelector: "var(--un-chinese-typography-manualmode-dark-selector)",
   fontStackSans: "var(--un-chinese-typography-font-stack-sans)",
   fontStackSerif: "var(--un-chinese-typography-font-stack-serif)",
   fontStackMono: "var(--un-chinese-typography-font-stack-mono)",
@@ -57,9 +54,6 @@ export const getVariables = {
   chineseQuotePresetsCommonHorizontal: "var(--un-chinese-typography-chinese-quote-presets-common-horizontal)",
   chineseQuotePresetsCommonVertical: "var(--un-chinese-typography-chinese-quote-presets-common-vertical)",
   chineseQuoteSet: "var(--un-chinese-typography-chinese-quote-set)",
-  columnCountList: "var(--un-chinese-typography-column-count-list)",
-  columnWidthList: "var(--un-chinese-typography-column-width-list)",
-  cssResetScheme: "var(--un-chinese-typography-css-reset-scheme)",
 };
 
 // const originalCSSVariables = {

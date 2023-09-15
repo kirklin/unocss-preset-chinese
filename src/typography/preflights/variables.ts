@@ -3,9 +3,6 @@ import type { Theme } from "@unocss/preset-mini";
 export const generateDefaultVariables = (selectorName: string, theme: Theme) => {
   return {
     "--un-chinese-typography-root-selector": `.${selectorName}`,
-    "--un-chinese-typography-darkmode": "true",
-    "--un-chinese-typography-manualmode-auto-selector": "[data-darkmode='auto'] &",
-    "--un-chinese-typography-manualmode-dark-selector": "[data-darkmode='dark'] &",
     "--un-chinese-typography-font-stack-sans": theme?.fontFamily?.sans,
     "--un-chinese-typography-font-stack-serif": theme?.fontFamily?.serif,
     "--un-chinese-typography-font-stack-mono": theme?.fontFamily?.mono,
@@ -64,8 +61,5 @@ export const generateDefaultVariables = (selectorName: string, theme: Theme) => 
     "--un-chinese-typography-chinese-quote-presets-common-horizontal": "\"「\" \"」\" \"『\" \"』\"",
     "--un-chinese-typography-chinese-quote-presets-common-vertical": "\"「\" \"」\" \"『\" \"』\"",
     "--un-chinese-typography-chinese-quote-set": "common",
-    "--un-chinese-typography-column-count-list": "1, 2, 3, 4",
-    "--un-chinese-typography-column-width-list": "16em, 20em, 24em, 28em, 32em, 36em, 40em, 44em, 48em",
-    "--un-chinese-typography-css-reset-scheme": "reset",
   };
 };
