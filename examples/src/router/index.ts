@@ -9,7 +9,13 @@ export const router = createRouter({
   strict: true,
   // When switching pages, scroll to the top
   // 当切换页面，滚动到最顶部
-  scrollBehavior: () => ({ left: 0, top: 0 }),
+  scrollBehavior: (to) => {
+    if (to.hash) {
+      return { selector: to.hash };
+    } else {
+      return { left: 0, top: 0 };
+    }
+  },
 });
 
 // Injection Progress
