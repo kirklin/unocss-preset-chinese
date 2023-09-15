@@ -9,6 +9,7 @@ import { getPreflights } from "./preflights";
 import { generateAncientCss } from "./css/ancient";
 import type { TypographyCompatibilityOptions } from "./types/compatibilityOptions";
 import { generateDefaultVariables } from "./preflights/variables";
+import { generateAnnotationCss } from "./css/annotation";
 
 /**
  * @public
@@ -208,6 +209,12 @@ export function chineseTypography(options?: TypographyOptions): Preset<Theme> {
         layer: "typography",
         getCSS: () => {
           return generateAncientCss(selectorName);
+        },
+      },
+      {
+        layer: "typography",
+        getCSS: () => {
+          return generateAnnotationCss(selectorName);
         },
       },
       {
