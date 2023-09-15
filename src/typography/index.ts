@@ -68,7 +68,7 @@ export function chineseTypography(options?: TypographyOptions): Preset<Theme> {
     rules: [
       [
         selectorNameRE,
-        (_, { rawSelector }) => {
+        (_, { rawSelector, theme }) => {
           escapedSelectors.add(toEscapedSelector(rawSelector));
           return {
             // 中文每行展示文字（CPL）建议在 30~50 之间，默认 42
@@ -85,6 +85,8 @@ export function chineseTypography(options?: TypographyOptions): Preset<Theme> {
             "overflow-wrap": "break-word",
             "word-wrap": "break-word",
             "hyphens": "auto",
+
+            ...generateDefaultVariables(selectorName, theme),
           };
         },
         { layer: "typography" },
@@ -120,8 +122,6 @@ export function chineseTypography(options?: TypographyOptions): Preset<Theme> {
             "--un-chinese-typography-invert-bg-soft": colorObject[800] ?? baseColor,
 
             "--un-chinese-typography-font-mono": theme.fontFamily?.mono,
-
-            ...generateDefaultVariables(selectorName, theme),
           };
         },
         { layer: "typography" },
