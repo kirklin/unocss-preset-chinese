@@ -40,7 +40,7 @@ export const ChineseBase = {
     "text-align": "justify",
   },
 
-  "p:not(:lang(zh)):not(:lang(ja)):not(:lang(kr))": {
+  "p:not(:lang(zh)):not(:lang(ja)):not(:lang(ko))": {
     "text-align": "start",
   },
 
