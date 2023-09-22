@@ -79,7 +79,7 @@ export const generateOtherCss = (selectorName: string) => {
   text-emphasis: filled circle;
   text-emphasis-position: under right;
 }
-.${selectorName} .${selectorName}-em:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)), .${selectorName} .${selectorName}-em:not(:lang(zh)) {
+.${selectorName} .${selectorName}-em:not(:lang(zh)):not(:lang(ja)):not(:lang(ko)), .${selectorName} .${selectorName}-em:not(:lang(zh)) {
   -webkit-text-emphasis: none;
   text-emphasis: none;
 }
