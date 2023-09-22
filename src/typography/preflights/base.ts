@@ -40,10 +40,6 @@ export const ChineseBase = {
     "text-align": "justify",
   },
 
-  "p:not(:lang(zh)):not(:lang(ja)):not(:lang(ko))": {
-    "text-align": "start",
-  },
-
   "pre": {
     "margin-block-start": `calc(${getVariables.stdBlockUnit} * 0.5)`,
     "margin-block-end": `calc(${getVariables.stdBlockUnit} * 0.5)`,
