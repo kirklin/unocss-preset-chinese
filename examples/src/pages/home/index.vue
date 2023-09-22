@@ -524,7 +524,7 @@ defineOptions({
       <p>以下是完成本项目过程中所参考的资料：</p>
       <ul>
         <li><a href="https://unocss.dev/" target="_blank">UnoCss 官方网站</a></li>
-        <li><a href="https://w3c.github.io/clreq/" target="_blank">中文排版需求（W3C 规范）</a></li>
+        <li><a href="https://www.w3.org/TR/clreq/" target="_blank">中文排版需求（W3C 规范）</a></li>
         <li><a href="http://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/13/20150113091548267.pdf" target="_blank">中华人民共和国国家标准 GB/T 15834-2011《标点符号用法》</a></li>
         <li><a href="https://language.moe.gov.tw/001/Upload/FILES/SITE_CONTENT/M0001/HAU/h6.htm" target="_blank">中国台湾地区标准 《重訂標點符號手冊》</a></li>
         <li><a href="https://github.com/sivan/heti" target="_blank">赫蹏（hètí）GitHub 仓库</a></li>
@@ -534,7 +534,7 @@ defineOptions({
         <ol>
           <li id="fn-01">
             <a v-anchor="'#ref-01'" title="移至">^</a>
-            《中文排版需求》：https://w3c.github.io/clreq/
+            《中文排版需求》：https://www.w3.org/TR/clreq/
           </li>
         </ol>
       </footer>
