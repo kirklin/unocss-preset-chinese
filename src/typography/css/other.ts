@@ -1,4 +1,5 @@
 import { getVariables } from "./variables";
+import { getNonCjkBlockCss } from "./nonCjkBlock";
 
 export const generateOtherCss = (selectorName: string) => {
   return `
@@ -79,10 +80,10 @@ export const generateOtherCss = (selectorName: string) => {
   text-emphasis: filled circle;
   text-emphasis-position: under right;
 }
-.${selectorName} .${selectorName}-em:not(:lang(zh)):not(:lang(ja)):not(:lang(ko)), .${selectorName} .${selectorName}-em:not(:lang(zh)) {
-  -webkit-text-emphasis: none;
-  text-emphasis: none;
-}
+${getNonCjkBlockCss(`${selectorName}-em`, {
+    "-webkit-text-emphasis": "start",
+    "text-emphasis": "none",
+})}
 .${selectorName} .${selectorName}-ruby--inline {
   display: inline-flex;
   flex-direction: column-reverse;
