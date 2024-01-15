@@ -2,7 +2,7 @@
 
 import { getVariables } from "./variables";
 
-export const generateAncientCss = (selectorName: string) => {
+export function generateAncientCss(selectorName: string) {
   return `
 .${selectorName}--ancient, .${selectorName}--poetry {
   font-family: ${getVariables.fontFamilySong};
@@ -68,4 +68,4 @@ export const generateAncientCss = (selectorName: string) => {
   text-indent: 0;
 }
 `;
-};
+}

@@ -85,7 +85,6 @@ export default defineConfig({
 });
 ```
 
-
 ## License
 
 [MIT](./LICENSE) License &copy; 2022-PRESENT [Kirk Lin](https://github.com/kirklin)

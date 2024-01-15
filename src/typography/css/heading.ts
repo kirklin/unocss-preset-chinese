@@ -1,7 +1,7 @@
 import { getNonCjkBlockCss } from "./nonCjkBlock";
 import { getVariables } from "./variables";
 
-export const generateHeadingCss = (selectorName: string) => {
+export function generateHeadingCss(selectorName: string) {
   return `
   
     ${getNonCjkBlockCss(`${selectorName} h1, h2, h3`, {
@@ -11,4 +11,4 @@ export const generateHeadingCss = (selectorName: string) => {
         "letter-spacing": getVariables.letterSpacingNormal,
     })}
 `;
-};
+}

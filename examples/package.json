@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@8.14.1",
-  "description": "palette-examples",
+  "description": "unocss-preset-chinese-examples",
   "keywords": [],
   "main": "src/main.ts",
   "scripts": {

@@ -8,7 +8,7 @@ export * from "./types";
 
 export * from "./typography/index";
 
-const presetChinese = (options: ChineseFontsOptions = {}): Preset => {
+function presetChinese(options: ChineseFontsOptions = {}): Preset {
   // 解构参数并提供默认值
   const {
     extendTheme = true,
@@ -66,6 +66,6 @@ const presetChinese = (options: ChineseFontsOptions = {}): Preset => {
   preset.preflights = fontFacePreflights;
 
   return preset;
-};
+}
 
 export default presetChinese;

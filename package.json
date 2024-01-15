@@ -1,5 +1,6 @@
 {
   "name": "unocss-preset-chinese",
+  "type": "module",
   "version": "0.3.0",
   "packageManager": "pnpm@8.14.1",
   "description": "",
@@ -54,10 +55,10 @@
     "up": "taze major -r -w -I"
   },
   "peerDependenciesMeta": {
-    "unocss": {
+    "@unocss/nuxt": {
       "optional": true
     },
-    "@unocss/nuxt": {
+    "unocss": {
       "optional": true
     }
   },

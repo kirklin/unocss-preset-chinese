@@ -1,6 +1,6 @@
 import type { Theme } from "@unocss/preset-mini";
 
-export const generateDefaultVariables = (selectorName: string, theme: Theme) => {
+export function generateDefaultVariables(selectorName: string, theme: Theme) {
   return {
     "--un-chinese-typography-root-selector": `.${selectorName}`,
     "--un-chinese-typography-font-stack-sans": theme?.fontFamily?.sans,
@@ -62,4 +62,4 @@ export const generateDefaultVariables = (selectorName: string, theme: Theme) => 
     "--un-chinese-typography-chinese-quote-presets-common-vertical": "\"「\" \"」\" \"『\" \"』\"",
     "--un-chinese-typography-chinese-quote-set": "common",
   };
-};
+}

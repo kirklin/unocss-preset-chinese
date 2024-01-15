@@ -1,7 +1,7 @@
 import { getNonCjkBlockCss } from "./nonCjkBlock";
 import { getVariables } from "./variables";
 
-export const generateAnnotationCss = (selectorName: string) => {
+export function generateAnnotationCss(selectorName: string) {
   return `
      .${selectorName}--annotation p {
       margin-block-start: 0;
@@ -25,4 +25,4 @@ export const generateAnnotationCss = (selectorName: string) => {
         margin-block-end: ${getVariables.stdBlockUnit};
     }
 `;
-};
+}

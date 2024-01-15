@@ -1,7 +1,7 @@
 import { getNonCjkBlockCss } from "./nonCjkBlock";
 import { getVariables } from "./variables";
 
-export const generateBaseCss = (selectorName: string) => {
+export function generateBaseCss(selectorName: string) {
   return `
   
     ${getNonCjkBlockCss(`${selectorName} p`, {
@@ -11,4 +11,4 @@ export const generateBaseCss = (selectorName: string) => {
         "letter-spacing": getVariables.letterSpacingNormal,
     })}
 `;
-};
+}

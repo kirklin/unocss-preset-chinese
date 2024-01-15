@@ -48,31 +48,16 @@ export function generateFontList(
         break;
         // 黑体
       case "hei":
-        fontList.push("PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "Noto Sans CJK SC",
-          "WenQuanYi Micro Hei", "WenQuanYi Zen Hei", "SimHei", "WenQuanYi Zen Hei Sharp");
+        fontList.push("PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "WenQuanYi Zen Hei", "SimHei", "WenQuanYi Zen Hei Sharp");
         break;
         // 楷体
       case "kai":
-        fontList.push("Kaiti SC", "STKaiti",
-          "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB",
-          "KaiTi", "KaiTi_GB2312", "DFKai-SB");
+        fontList.push("Kaiti SC", "STKaiti", "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", "KaiTi", "KaiTi_GB2312", "DFKai-SB");
         fontList.push(...chineseFonts);
         break;
         // 宋体
       case "song":
-        fontList.push("Songti SC", "Noto Serif SC", "Noto Serif CJK SC",
-          "Source Han Serif SC",
-          "Source Han Serif CN",
-          "STSong",
-          "AR PL New Sung",
-          "AR PL SungtiL GB",
-          "NSimSun",
-          "SimSun",
-          "WenQuanYi Bitmap Song",
-          "AR PL UMing CN",
-          "PMingLiU",
-          "MingLiU",
-        );
+        fontList.push("Songti SC", "Noto Serif SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", "STSong", "AR PL New Sung", "AR PL SungtiL GB", "NSimSun", "SimSun", "WenQuanYi Bitmap Song", "AR PL UMing CN", "PMingLiU", "MingLiU");
         fontList.push(...chineseFonts);
         break;
         // 仿宋体
@@ -82,18 +67,7 @@ export function generateFontList(
         break;
         // 新宋体
       case "new-song":
-        fontList.push("SimSun-ExtB", "NSimSun", "Songti SC", "Noto Serif SC", "Noto Serif CJK SC",
-          "Source Han Serif SC",
-          "Source Han Serif CN",
-          "STSong",
-          "AR PL New Sung",
-          "AR PL SungtiL GB",
-          "NSimSun",
-          "SimSun",
-          "WenQuanYi Bitmap Song",
-          "AR PL UMing CN",
-          "PMingLiU",
-          "MingLiU");
+        fontList.push("SimSun-ExtB", "NSimSun", "Songti SC", "Noto Serif SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", "STSong", "AR PL New Sung", "AR PL SungtiL GB", "NSimSun", "SimSun", "WenQuanYi Bitmap Song", "AR PL UMing CN", "PMingLiU", "MingLiU");
         fontList.push(...chineseFonts);
         break;
         // 隶书
@@ -113,34 +87,16 @@ export function generateFontList(
         break;
         // 黑体
       case "hei":
-        fontList.push("PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "Noto Sans CJK SC",
-          "WenQuanYi Micro Hei", "WenQuanYi Zen Hei", "SimHei", "WenQuanYi Zen Hei Sharp");
+        fontList.push("PingFang SC", "Heiti SC", "Microsoft YaHei", "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "WenQuanYi Zen Hei", "SimHei", "WenQuanYi Zen Hei Sharp");
         break;
         // 楷体
       case "kai":
-        fontList.push("Kaiti SC", "STKaiti",
-          "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB",
-          "KaiTi", "KaiTi_GB2312", "DFKai-SB", "TW-Kai");
+        fontList.push("Kaiti SC", "STKaiti", "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", "KaiTi", "KaiTi_GB2312", "DFKai-SB", "TW-Kai");
         fontList.push(...chineseFonts);
         break;
         // 宋体
       case "song":
-        fontList.push("Songti SC", "Noto Serif SC", "Noto Serif CJK SC",
-          "Source Han Serif SC", "Source Han Serif CN",
-          "STSong",
-          "AR PL New Sung",
-          "AR PL SungtiL GB",
-          "NSimSun",
-          "SimSun",
-          "TW-Sung",
-          "WenQuanYi Bitmap Song",
-          "AR PL UMing CN",
-          "AR PL UMing HK",
-          "AR PL UMing TW",
-          "AR PL UMing TW MBE",
-          "PMingLiU",
-          "MingLiU",
-        );
+        fontList.push("Songti SC", "Noto Serif SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", "STSong", "AR PL New Sung", "AR PL SungtiL GB", "NSimSun", "SimSun", "TW-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", "PMingLiU", "MingLiU");
         fontList.push(...chineseFonts);
         break;
         // 仿宋体
@@ -150,18 +106,7 @@ export function generateFontList(
         break;
         // 新宋体
       case "new-song":
-        fontList.push("SimSun-ExtB", "NSimSun", "Songti SC", "Noto Serif SC", "Noto Serif CJK SC",
-          "Source Han Serif SC",
-          "Source Han Serif CN",
-          "STSong",
-          "AR PL New Sung",
-          "AR PL SungtiL GB",
-          "NSimSun",
-          "SimSun",
-          "WenQuanYi Bitmap Song",
-          "AR PL UMing CN",
-          "PMingLiU",
-          "MingLiU");
+        fontList.push("SimSun-ExtB", "NSimSun", "Songti SC", "Noto Serif SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", "STSong", "AR PL New Sung", "AR PL SungtiL GB", "NSimSun", "SimSun", "WenQuanYi Bitmap Song", "AR PL UMing CN", "PMingLiU", "MingLiU");
         fontList.push(...chineseFonts);
         break;
         // 隶书

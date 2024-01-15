@@ -181,7 +181,8 @@ export function chineseTypography(options?: TypographyOptions): Preset<Theme> {
         { layer: "typography" },
       ],
       [
-        verticalTitleRE, () => ({ "text-align": "start" }),
+        verticalTitleRE,
+        () => ({ "text-align": "start" }),
         { layer: "typography" },
       ],
 

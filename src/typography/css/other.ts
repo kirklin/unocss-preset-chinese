@@ -1,7 +1,7 @@
 import { getVariables } from "./variables";
 import { getNonCjkBlockCss } from "./nonCjkBlock";
 
-export const generateOtherCss = (selectorName: string) => {
+export function generateOtherCss(selectorName: string) {
   return `
 .${selectorName} .${selectorName}-meta {
   display: block;
@@ -118,4 +118,4 @@ ${getNonCjkBlockCss(`${selectorName}-em`, {
   margin-inline-end: -0.25em;
 }
 `;
-};
+}
