@@ -5,10 +5,10 @@ export const ChineseList = {
   },
   "ul, ol": {
     "padding-inline-start": "var(--un-chinese-typography-text-indent-size)",
-    "ul, ol": {
-      "margin-block-start": "0",
-      "margin-block-end": "0",
-    },
+  },
+  "ul ul, ul ol, ol ul, ol ol": {
+    "margin-block-start": "0",
+    " margin-block-end": "0",
   },
   "ul": {
     "list-style-type": "disc",

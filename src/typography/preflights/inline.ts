@@ -79,10 +79,10 @@ export const ChineseInline = {
     bottom: "-0.25em",
   },
   "sup": {
-    "top": "-0.5em",
-    "&:target, a:target": {
-      "background-color": "hsl(210, 100%, 93%)",
-    },
+    top: "-0.5em",
+  },
+  "sup:target, sup a:target": {
+    "background-color": "hsl(210, 100%, 93%)",
   },
   "summary": {
     "padding-inline-start": "1em",
