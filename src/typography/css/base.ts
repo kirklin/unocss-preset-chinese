@@ -6,9 +6,9 @@ export function generateBaseCss(selectorName: string) {
   
     ${getNonCjkBlockCss(`${selectorName} p`, {
         "text-align": "start",
-    })}
+      })}
     ${getNonCjkBlockCss(selectorName, {
         "letter-spacing": getVariables.letterSpacingNormal,
-    })}
+      })}
 `;
 }

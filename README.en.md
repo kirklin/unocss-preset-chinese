@@ -77,7 +77,7 @@ export default defineConfig({
     presetUno(),
     presetChinese({
       extendTheme: false, // Do not extend the theme object
-      themeKey: 'customFontFamily', // Use a custom theme key
+      themeKey: "customFontFamily", // Use a custom theme key
       chineseType: "traditional", // Specify the text as Traditional Chinese
     }),
     // ...custom presets

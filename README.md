@@ -79,7 +79,7 @@ export default defineConfig({
     presetUno(),
     presetChinese({
       extendTheme: false, // 不扩展主题对象
-      themeKey: 'customFontFamily', // 使用自定义的主题键
+      themeKey: "customFontFamily", // 使用自定义的主题键
       chineseType: "traditional", // 指定文本为繁体中文
     }),
     // ...custom presets

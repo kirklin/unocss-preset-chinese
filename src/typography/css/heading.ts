@@ -6,9 +6,9 @@ export function generateHeadingCss(selectorName: string) {
   
     ${getNonCjkBlockCss(`${selectorName} h1, h2, h3`, {
         "letter-spacing": "0",
-    })}
+      })}
     ${getNonCjkBlockCss(selectorName, {
         "letter-spacing": getVariables.letterSpacingNormal,
-    })}
+      })}
 `;
 }

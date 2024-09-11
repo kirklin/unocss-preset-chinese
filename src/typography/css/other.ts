@@ -83,7 +83,7 @@ export function generateOtherCss(selectorName: string) {
 ${getNonCjkBlockCss(`${selectorName}-em`, {
     "-webkit-text-emphasis": "start",
     "text-emphasis": "none",
-})}
+  })}
 .${selectorName} .${selectorName}-ruby--inline {
   display: inline-flex;
   flex-direction: column-reverse;

@@ -19,7 +19,7 @@ export function generateAnnotationCss(selectorName: string) {
     ${getNonCjkBlockCss(`${selectorName}--annotation em`, {
         "-webkit-text-emphasis": "none",
         "text-emphasis": "none",
-    })}
+      })}
     .${selectorName}--annotation .${selectorName}-meta {
         margin-block-start: calc(${getVariables.stdBlockUnit} * 0.5);
         margin-block-end: ${getVariables.stdBlockUnit};
