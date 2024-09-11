@@ -2,7 +2,7 @@
   "name": "unocss-preset-chinese",
   "type": "module",
   "version": "0.3.2",
-  "packageManager": "pnpm@8.14.1",
+  "packageManager": "pnpm@9.10.0",
   "description": "",
   "author": "Kirk Lin <https://github.com/kirklin>",
   "license": "MIT",
@@ -63,24 +63,24 @@
     }
   },
   "dependencies": {
-    "@unocss/core": "^0.58.3",
-    "@unocss/preset-mini": "^0.58.3"
+    "@unocss/core": "^0.62.3",
+    "@unocss/preset-mini": "^0.62.3"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.21.12",
-    "@kirklin/eslint-config": "^2.0.0",
-    "@types/node": "^20.11.1",
-    "@unocss/autocomplete": "^0.58.3",
-    "bumpp": "^9.2.1",
-    "eslint": "^8.56.0",
-    "esno": "^4.0.0",
-    "pnpm": "^8.14.1",
-    "rimraf": "^5.0.5",
-    "taze": "^0.13.1",
-    "typescript": "^5.3.3",
+    "@antfu/ni": "^0.23.0",
+    "@kirklin/eslint-config": "^2.6.1",
+    "@types/node": "^22.5.4",
+    "@unocss/autocomplete": "^0.62.3",
+    "bumpp": "^9.5.2",
+    "eslint": "^9.10.0",
+    "esno": "^4.7.0",
+    "pnpm": "^9.10.0",
+    "rimraf": "^6.0.1",
+    "taze": "^0.16.7",
+    "typescript": "^5.6.2",
     "unbuild": "^2.0.0",
-    "unocss": "^0.58.3",
-    "vite": "^5.0.11",
-    "vitest": "^1.2.0"
+    "unocss": "^0.62.3",
+    "vite": "^5.4.4",
+    "vitest": "^2.0.5"
   }
 }
